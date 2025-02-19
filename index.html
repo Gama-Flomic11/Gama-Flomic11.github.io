@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Profile Devsoc</title>
+    <title>Profile Devsoc</title>
 
-<link rel = "stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <script type = "text/javascript">
+        var images = [];
+        
+        images[0] = "pictures/background.jpg";
+        images[1] = "pictures/marvel.jpg";
+
+
+        var counter = [];
+
+        counter[0] = 0;
+        counter[1] = 0;
+
+        size = 1;
+
+        function images_name(x, y) {
+            for (let key in counter) {
+                if (key == x) {
+                    counter[key]++;
+                } else {
+                    counter[key] = 0;
+                }
+            }
+            alert(counter[x]);
+            var $img= document.getElementById(y);
+            $img.src = images[x];
+            $img.alt = "Card";
+        }
+    </script>
 </head>
 
-<body>
-<p>Tester</p>
+<body style="background-image: url('pictures/background.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    <div style="background-image: url('pictures/marvel.jpg'); border: 2px solid #3268bd;">
+        <h1>Shay's Profile </h1>
+        <h1>(Around the World)</h1>
+        <h1>MARVEL EDITION</h1>
+        
+    </div>
+    <div class="cards">
+        <button type="button" onclick="images_name(0, 'img1')">
+            <img id="img1" src="" alt="Blank Card">
+        </button>
+
+        <button type="button" onclick="images_name(0, 'img2')">
+            <img id="img2" src="" alt="Blank Card">
+        </button>
+
+        <button type="button" onclick="images_name(1, 'img3')">
+            <img id="img3" src="" alt="Blank Card">
+        </button>
+        <img src="" alt="Blank Card">
+        <img src="" alt="Blank Card">
+        <img src="" alt="Blank Card">
+    </div>
 </body>
