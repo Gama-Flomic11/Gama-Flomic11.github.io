@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" type="image/x-icon" href="pictures/chick.png">
     <title>Profile Devsoc</title>
 
     <link rel="stylesheet" href="style/style.css">
@@ -8,29 +9,80 @@
     <script type = "text/javascript">
         var images = [];
         
-        images[0] = "pictures/background.jpg";
-        images[1] = "pictures/marvel.jpg";
-
+        images[0] = "pictures/madripoor.png";
+        images[1] = "pictures/hellsKitchen.png";
+        images[2] = "pictures/newYork.png";
+        images[3] = "pictures/wakanda.png";
+        images[4] = "pictures/theRedRoom.png";
 
         var counter = [];
 
         counter[0] = 0;
         counter[1] = 0;
+        counter[2] = 0;
+        counter[3] = 0;
+        counter[4] = 0;
 
-        size = 1;
+        var current_image_flipped = 0;
+
+        var size = 1;
 
         function images_name(x, y) {
             for (let key in counter) {
                 if (key == x) {
                     counter[key]++;
+                    if (counter[key] == 2) {
+                        if (key == 0) {
+                            var parent = document.getElementById("parent");
+                            const child = document.getElementById("Madripoor");
+                            const para = document.createElement("p");
+                            const node = document.createTextNode("Madripoor a location once haven to pirates. It is the criminal underworld of the universe and the home of the Power Broker in the MCU. Although I do not seem myself having a good time in Madripoor after seeing Zemo dance in the Falcon and the Winter Soldier this location reminds me of my musical abilities being able to play guitar, piano and sing, a real trifecta.");
+                            para.appendChild(node);
+                            parent.replaceChild(para,child);
+                        } else if (key == 1) {
+                            var parent = document.getElementById("parent");
+                            const child = document.getElementById("Hells Kitchen");
+                            const para = document.createElement("p");
+                            const node = document.createTextNode("The home of Daredevil and a common location for the vigilante Spiderman to swing through. This is a good location to gauge my upbringing being a bright younger individual and using my skills to tinker with code even before realising I would like to pursue it in university. Although my childhood was beach, not streets.");
+                            para.appendChild(node);
+                            parent.replaceChild(para,child);
+                        } else if (key == 2) {
+                            var parent = document.getElementById("parent");
+                            const child = document.getElementById("New York");
+                            const para = document.createElement("p");
+                            const node = document.createTextNode("A place of great significance in the MCU the first location for the Mighty Avengers to ever team up in the Battle of New York. This team up was much smoother than some of my group related tasks but there is hope still, given there was much destruction before triumph.");
+                            para.appendChild(node);
+                            parent.replaceChild(para,child);
+                        } else if (key == 3) {
+                            var parent = document.getElementById("parent");
+                            const child = document.getElementById("Wakanda");
+                            const para = document.createElement("p");
+                            const node = document.createTextNode("The location of the great Black Panther. This place symbolises a strong tribal bond to the ancestors and has the same sparing as on a Taekwon-do ring when I was younger and the resemblence to religious practices like those at churches I attend");
+                            para.appendChild(node);
+                            parent.replaceChild(para,child);
+                        } else if (key == 4) {
+                            var parent = document.getElementById("parent");
+                            const child = document.getElementById("The Red Room");
+                            const para = document.createElement("p");
+                            const node = document.createTextNode("The training ground for young assassins like Black Widow. Although I will not be doing anything like a Red Room Assassin there work ethic is similar to my own spending countless hours honing skills in mathematics, music and computer science to be as good as I can");
+                            para.appendChild(node);
+                            parent.replaceChild(para,child);
+                        }
+                    }
                 } else {
+                    if (counter[key] == 1) {
+                        var $img= document.getElementById(current_image_flipped);
+                        $img.src = "pictures/cardBack.png";
+                        $img.alt = "Blank Card (Wrong Combo)";
+                    }
                     counter[key] = 0;
                 }
             }
-            alert(counter[x]);
+            current_image_flipped = y;
+
             var $img= document.getElementById(y);
             $img.src = images[x];
-            $img.alt = "Card";
+            $img.alt = "Card Showing Location";
         }
     </script>
 </head>
@@ -42,20 +94,66 @@
         <h1>MARVEL EDITION</h1>
         
     </div>
+
+    <h2 style="background-color: #a50000; color: azure;">Name: Shay || Pronouns: (He/Him) || Objective: Match To Unlock More Information</h2>
     <div class="cards">
-        <button type="button" onclick="images_name(0, 'img1')">
-            <img id="img1" src="" alt="Blank Card">
+        <button type="button" onclick="images_name(4, 'img1')">
+            <img id="img1" src="pictures/cardBack.png" alt="Blank Card">
         </button>
 
-        <button type="button" onclick="images_name(0, 'img2')">
-            <img id="img2" src="" alt="Blank Card">
+        <button type="button" onclick="images_name(2, 'img2')">
+            <img id="img2"  src="pictures/cardBack.png" alt="Blank Card">
         </button>
 
-        <button type="button" onclick="images_name(1, 'img3')">
-            <img id="img3" src="" alt="Blank Card">
+        <button type="button" onclick="images_name(3, 'img3')">
+            <img id="img3"  src="pictures/cardBack.png" alt="Blank Card">
         </button>
-        <img src="" alt="Blank Card">
-        <img src="" alt="Blank Card">
-        <img src="" alt="Blank Card">
+        <button type="button" onclick="images_name(0, 'img4')">
+            <img id="img4"  src="pictures/cardBack.png" alt="Blank Card">
+        </button>
+        <button type="button" onclick="images_name(2, 'img5')">
+            <img id="img5"  src="pictures/cardBack.png" alt="Blank Card">
+        </button>
     </div>
+    <div class="cards">
+        <button type="button" onclick="images_name(0, 'img6')">
+            <img id="img6"  src="pictures/cardBack.png" alt="Blank Card">
+        </button>
+
+        <button type="button" onclick="images_name(4, 'img7')">
+            <img id="img7"  src="pictures/cardBack.png" alt="Blank Card">
+        </button>
+
+        <button type="button" onclick="images_name(1, 'img8')">
+            <img id="img8"  src="pictures/cardBack.png" alt="Blank Card">
+        </button>
+        <button type="button" onclick="images_name(3, 'img9')">
+            <img id="img9"  src="pictures/cardBack.png" alt="Blank Card">
+        </button>
+        <button type="button" onclick="images_name(1, 'img10')">
+            <img id="img10"  src="pictures/cardBack.png" alt="Blank Card">
+        </button>
+    </div>
+    <div style="padding: 20px;" id="parent">
+        <p id="Madripoor" style="font-weight: 900;">To be unlocked</p>
+        <p id="New York" style="font-weight: 900;">To be unlocked</p>
+        <p id="The Red Room" style="font-weight: 900;">To be unlocked</p>
+        <p id="Hells Kitchen" style="font-weight: 900;">To be unlocked</p>
+        <p id="Wakanda" style="font-weight: 900;">To be unlocked</p>
+        
+    </div>
+    <div style="padding: 20px;">
+        <p>Image references </p>    
+        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.disney.com.au%2Fmarvel&psig=AOvVaw12zwU-zMLFdKHLd__gHblM&ust=1739328538985000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCKiz0PHNuosDFQAAAAAdAAAAABAE">Marvel Logo</a>
+        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fmclellan.law.msu.edu%2Fquestions%2Fmarvel-zoom-background-copyright&psig=AOvVaw2GYOBdIsucOqoBoElXLEhQ&ust=1739333545989000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCNCY88XguosDFQAAAAAdAAAAABAJ">Marvel</a>
+        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fchicken_2002611&psig=AOvVaw0LvoYQSp0__hDnhAi4Ybhe&ust=1740049766372000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPj_stPMz4sDFQAAAAAdAAAAABAJ">Icon</a>
+        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.exploremadripoor.com%2F&psig=AOvVaw3FzkP9n1nSO6ZHq3K5BN5c&ust=1740049866386000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLiN2oPNz4sDFQAAAAAdAAAAABAE">Madripoor</a>
+        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.boweryboyshistory.com%2F2012%2F05%2Favengers-disassemble-metlife-building.html&psig=AOvVaw3sf8HTM4_qCBgt_s3mEggk&ust=1740050069710000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOCvt-bNz4sDFQAAAAAdAAAAABAE">New York</a>
+        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.worldoutspoken.com%2Farticles-blog%2Fon-earth-as-in-wakanda&psig=AOvVaw2DNLc2dquJPH6gZ6AKZk_S&ust=1740050265211000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOiTy8jOz4sDFQAAAAAdAAAAABAE">Wakanda</a>
+        <p>Other Images sources on google images</p>
+    </div>
+    
+
+
+
 </body>
