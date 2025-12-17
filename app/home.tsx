@@ -1,14 +1,10 @@
 'use client'
-import { useEffect, useMemo, useState } from "react";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import type { Container, ISourceOptions } from "@tsparticles/engine";
-import { loadSlim } from "@tsparticles/slim";
-import { Particle } from "./particle";
+import { useState } from "react";
 
 export default function Home() {
   const [invispanel, visiblepanel] = useState([false, false, false, false])
 
-  const handleClick = (a: Number) => {
+  const handleClick = (a: number) => {
     visiblepanel(
       [
         Boolean(Number(invispanel[0]) + Number(a==0)), 
@@ -23,7 +19,7 @@ export default function Home() {
     <>
     <div className="grid grid-cols-5 gap-5 p-10 z-index-0">
       {<div className="bg-green-500 opacity-100 rounded-lg p-2 z-index-5" onClick={() => handleClick(0)}>
-        You enter a dream, cold and dark  <div className='flex'><div className='flex w-100'/><img className='flex' src='image.png' width='40'/></div> </div>}
+        You enter a dream, cold and dark <div className='flex'><div className='flex w-100'/><img className='flex' src='image.png' width='40'/></div> </div>}
       {invispanel[0] && (
             <div className="bg-green-400 rounded-lg p-2" onClick={() => handleClick(1)}>
                 Words 
