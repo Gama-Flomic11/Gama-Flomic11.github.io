@@ -23,7 +23,7 @@ export default function Home() {
     <>
     <div className="grid grid-cols-5 gap-5 p-10 z-index-0">
       {<div className="bg-green-500 opacity-100 rounded-lg p-2 z-index-5" onClick={() => handleClick(0)}>
-        You enter a dream, cold and dark <div className='flex'><div className='flex w-100'/><img className='flex' src='image.png' width='40'/></div> </div>}
+        You enter a dream, cold and dark  <div className='flex'><div className='flex w-100'/><img className='flex' src='image.png' width='40'/></div> </div>}
       {invispanel[0] && (
             <div className="bg-green-400 rounded-lg p-2" onClick={() => handleClick(1)}>
                 Words 
