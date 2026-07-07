@@ -1,9 +1,9 @@
 {
+  
   "name": "my-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://<your-github-username>.github.io/<your-repo-name>",
-  
+  "homepage": "https://gamaflomic11.github.io/gamaflomic11.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

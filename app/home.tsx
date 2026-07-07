@@ -17,7 +17,15 @@ export default function Home() {
   
   return (
     <>
-    <div className="grid grid-cols-5 gap-5 p-10 z-index-0">
+
+      <div>
+        <div className="text-black m-10 p-5 rounded-lg bg-blue-500 w-1/9 object-center hover:bg-blue-400 ">
+          <a href="/08-07-2026" className="w-full block" >08-07-2026 Blog</a>
+        </div>
+
+      </div>
+
+    {/* <div className="grid grid-cols-5 gap-5 p-10 z-index-0">
       {<div className="bg-green-500 opacity-100 rounded-lg p-2 z-index-5" onClick={() => handleClick(0)}>
         You enter a dream, cold and dark <div className='flex'><div className='flex w-100'/><img className='flex' src='image.png' width='40'/></div> </div>}
       {invispanel[0] && (
@@ -33,7 +41,7 @@ export default function Home() {
             </div>
             
       )}
-    </div>
+    </div> */}
     
     </>
 
