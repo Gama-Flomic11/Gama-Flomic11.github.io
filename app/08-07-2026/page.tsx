@@ -40,12 +40,12 @@ export default function Location() {
       soon in light of flex week and some busy schedules from us all. 
 </div>
     <div className="m-4"> 
-      My courses are so interesting this term. This may be strange to say after a bad test but it's not the interest
-      that is stopping me, it's the challenge. Since I am taking two courses I am doing my operating systems assignment
+      My courses are so interesting this term. This may be strange to say after a bad test but it&apos;s not the interest
+      that is stopping me, it&apos;s the challenge. Since I am taking two courses I am doing my operating systems assignment
       by myself when it is supposed to be done in pairs, this may be a bad decision but it does take out the variable of
       a bad partner, and I will be a wizard at the operating system by the time I get to Advanced Operating Systems. I 
       am also still trudging my way through programming challenges, where I notice I am freezing on questions and just 
-      not translating the ideas to the code. This hasn't stopped me but has slowed me so I have been going to as many help 
+      not translating the ideas to the code. This hasn&apos;t stopped me but has slowed me so I have been going to as many help 
       sessions as I am available for just to connect my mind to my hands, and hopefully to unlock a greater ability in 
       that course. 
 </div>
@@ -59,14 +59,14 @@ export default function Location() {
       My to do list database is trugding along well. Some days I really do not want to do what it tells me to do, but I have
       been pushing through and completing the hard work when it comes along. I have tweaked it a tad recently because I felt
       like a lot of the tasks I were doing were 5 minute filler, now it is more focused. But I could use focusing on my 
-      applications a little more because of an opportunity I am in the running for that I don't want to pass by. I think 
-      I have almost calibrated the to do list to warrant coding up a GUI (visual component) so that I'm not having to use
+      applications a little more because of an opportunity I am in the running for that I don&apos;t want to pass by. I think 
+      I have almost calibrated the to do list to warrant coding up a GUI (visual component) so that I&apos;m not having to use
       terminal (text commands) to access my database. 
 </div>
     <div className="m-4"> 
 
       It is now the break week at University but I still have lectures, training and meetings so I am kept busy. But that
-      hasn't been devoid of fun. On Friday I managed to fit in some time to meet up with my high school friends for the
+      hasn&apos;t been devoid of fun. On Friday I managed to fit in some time to meet up with my high school friends for the
       first time in a while, which was an amazing time. On Saturday after my post exam sadness, I went out to celebrate with 
       some friends who took the exam and had a good walk around the city. On Sunday I spent a lot of the day at 
       birthday celebrations for another friend from TEDxUNSW, where we did a lot of exploring and fun activites, like 
@@ -77,7 +77,7 @@ export default function Location() {
 </div>
     <div className="m-4"> 
 
-      I'll sign this newsletter off with three notes. 
+      I&apos;ll sign this newsletter off with three notes. 
 </div>
     <div className="m-4"> 
 
@@ -87,7 +87,7 @@ export default function Location() {
 </div>
     <div className="m-4">
       A song I have enjoyed this week:
-      The Heart is a Muscle - 'Gang of Youths', <br/>
+      The Heart is a Muscle - &apos;Gang of Youths&apos;, <br/>
       <Link href='https://open.spotify.com/track/2jtoc6Pwym5dWlbaGx8fzR?si=05cc50984ffe4611' className="text-red-500">SPOTIFY LINK</Link> <br/>
       <Link href='https://www.youtube.com/watch?v=Y5OpvDdVtYU' className="text-red-500">YOUTUBE LINK</Link>
 </div>
