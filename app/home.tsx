@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
 
       <div>
         <div className="text-black m-10 p-5 rounded-lg bg-blue-500 w-1/9 object-center hover:bg-blue-400 ">
-          <a href="/08-07-2026" className="w-full block" >08-07-2026 Blog</a>
+          <Link href="/08-07-2026" className="w-full block" >08-07-2026 Blog</Link>
         </div>
 
       </div>

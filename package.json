@@ -3,7 +3,7 @@
   "name": "my-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gamaflomic11.github.io/gamaflomic11.github.io",
+  "homepage": "https://Gama-Flomic11.github.io/Gama-Flomic11.github.io",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

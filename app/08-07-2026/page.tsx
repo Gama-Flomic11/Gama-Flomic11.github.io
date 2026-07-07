@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import { Particle } from "../particle";
 
 
@@ -6,40 +7,39 @@ export default function Location() {
   return (
     <>
     <div className="text-black m-10 p-5 rounded-lg bg-blue-500 w-1/14 object-center hover:bg-blue-400">
-    <a href="/" className="w-full" >Go Back </a>
+    <Link href="/" className="w-full" >Go Back </Link>
     </div>
     <div className="justfiy-items-center w-full">
-    <div className='m-20 text-lg text-black w-5/6 bg-blue-300 text-justify border-2 border-color-blue-400 p-4 rounded-lg'>
-    <div className='m-4'> 
+    <div className="m-20 text-lg text-black w-5/6 bg-blue-300 text-justify border-2 border-color-blue-400 p-4 rounded-lg">
+    <div className="m-4"> 
       Hello Everyone!
     </div>
-    <div className='m-4'> 
+    <div className="m-4"> 
       This is my first blog so I am just getting used to this and might have some formatting and logistics issues to 
       start but I want to prioritise writing. 
 </div>
-    <div className='m-4'> 
+    <div className="m-4"> 
 
       This past week has not been what I hoped, a bad test result, some changes to my personal life; but I am in high
       spirits. Why, you may ask? I have been given more of a goal to work towards, get back on track.
 </div>
-    <div className='m-4'> 
+    <div className="m-4"> 
 
       So despite the setbacks since last week I have done a lot.
 </div>
-    <div className='m-4'> 
+    <div className="m-4"> 
 
       As an update on what I do from the day to day, I have been lucky enough to be a tutor for 2 courses now at the 
       University. This has proven to be a challenge to manage but not something I am not equipt to work with.
 </div>
-    <div className='m-4'> 
+    <div className="m-4"> 
 
       I am the IT director at TEDxUNSW and after our first successful event of the year we have made some of our first
       changes to the website of the year, we have a new contact us page, a little buggy on mobile, and some big 
       promotional elements for our most recent events. I am hoping that the crew can pull together some new changes
       soon in light of flex week and some busy schedules from us all. 
 </div>
-    <div className='m-4'> 
-
+    <div className="m-4"> 
       My courses are so interesting this term. This may be strange to say after a bad test but it's not the interest
       that is stopping me, it's the challenge. Since I am taking two courses I am doing my operating systems assignment
       by myself when it is supposed to be done in pairs, this may be a bad decision but it does take out the variable of
@@ -49,13 +49,12 @@ export default function Location() {
       sessions as I am available for just to connect my mind to my hands, and hopefully to unlock a greater ability in 
       that course. 
 </div>
-    <div className='m-4'> 
-
+    <div className="m-4"> 
       Still in college at the University and it has been treating me very well. It is really good to have a forced community
       around you and I have found my place in the new year finally, and hope to actually keep in touch with the people from
       this community into future years.
 </div>
-    <div className='m-4'> 
+    <div className="m-4"> 
 
       My to do list database is trugding along well. Some days I really do not want to do what it tells me to do, but I have
       been pushing through and completing the hard work when it comes along. I have tweaked it a tad recently because I felt
@@ -64,7 +63,7 @@ export default function Location() {
       I have almost calibrated the to do list to warrant coding up a GUI (visual component) so that I'm not having to use
       terminal (text commands) to access my database. 
 </div>
-    <div className='m-4'> 
+    <div className="m-4"> 
 
       It is now the break week at University but I still have lectures, training and meetings so I am kept busy. But that
       hasn't been devoid of fun. On Friday I managed to fit in some time to meet up with my high school friends for the
@@ -76,28 +75,28 @@ export default function Location() {
       school students and let them know what I do in University, so they could see what it is like. Hence a very busy week
       full of opportunity despite the poor results I still get to do what I really enjoy and help others.
 </div>
-    <div className='m-4'> 
+    <div className="m-4"> 
 
       I'll sign this newsletter off with three notes. 
 </div>
-    <div className='m-4'> 
+    <div className="m-4"> 
 
       My plan for this upcoming week:
       To knuckle down, I have a few more events I am attending and family coming up but I really want to knuckle down in 
       my spare time to actually ensure I am in good standing by the start of next week.
 </div>
-    <div className='m-4'>
+    <div className="m-4">
       A song I have enjoyed this week:
       The Heart is a Muscle - 'Gang of Youths', <br/>
-      <a href='https://open.spotify.com/track/2jtoc6Pwym5dWlbaGx8fzR?si=05cc50984ffe4611' className="text-red-500">SPOTIFY LINK</a> <br/>
-      <a href='https://www.youtube.com/watch?v=Y5OpvDdVtYU' className="text-red-500">YOUTUBE LINK</a>
+      <Link href='https://open.spotify.com/track/2jtoc6Pwym5dWlbaGx8fzR?si=05cc50984ffe4611' className="text-red-500">SPOTIFY LINK</Link> <br/>
+      <Link href='https://www.youtube.com/watch?v=Y5OpvDdVtYU' className="text-red-500">YOUTUBE LINK</Link>
 </div>
-    <div className='m-4'>
+    <div className="m-4">
       Days I am free if you want to catchup (HomeBase Next Week: Sydney Area): <br/>
       - Friday Morning <br/>
       - Tuesday (All Day)
       </div>
-      <div className='m-4'>
+      <div className="m-4">
       Thank you for reading, I hope to continue these throughout the rest of the year so let me know of any tweaks I need
       to make. <br></br>
       Shay.
