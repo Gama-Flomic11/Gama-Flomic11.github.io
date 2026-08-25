@@ -120,9 +120,9 @@ a:hover{
 <div>
   <p style = "text-decoration: none; font-size: 2em;">Recommended Personal Blogs</p>
   <div class= "pictures" style="display:flex; justify-content: start; padding:10px;">
-  <div onclick="changePage('/25-08-2026/index.html')" class = "box"><p class = "text" style="top:16%"">25-08-2026 <br> Exam Week+</p><img class = "boxphoto" src = "photos/28-08-2026/USyd.jpg"></div>
-  <div onclick="changePage('/11-08-2026/index.html')" class = "box"><p class = "text" style="top:3%">11-08-2026 <br> Formal Arts Dinner+</p><img class = "boxphoto" src = "photos/11-08-2026/Shay Creative Arts Formal Dinner.jpeg"></div>
-  <div onclick="changePage('/14-07-2026/index.html')" class = "box"><p class = "text" style="top:6%">14-07-2026 <br> Family Weekend+</p><img class = "boxphoto" src = "photos/14-07-2026/ShayAndMum.jpeg"></div>
+  <div onclick="changePage('25-08-2026/index.html')" class = "box"><p class = "text" style="top:16%"">25-08-2026 <br> Exam Week+</p><img class = "boxphoto" src = "photos/28-08-2026/USyd.jpg"></div>
+  <div onclick="changePage('11-08-2026/index.html')" class = "box"><p class = "text" style="top:3%">11-08-2026 <br> Formal Arts Dinner+</p><img class = "boxphoto" src = "photos/11-08-2026/Shay Creative Arts Formal Dinner.jpeg"></div>
+  <div onclick="changePage('14-07-2026/index.html')" class = "box"><p class = "text" style="top:6%">14-07-2026 <br> Family Weekend+</p><img class = "boxphoto" src = "photos/14-07-2026/ShayAndMum.jpeg"></div>
     
   </div>
   <!-- <div class= "pictures" style="display:flex; justify-content: start; padding:10px;">
@@ -172,11 +172,13 @@ a:hover{
       document.getElementById("PB").innerHTML = "Personal Blogs";
     }
 
+
     // function changePageTesting(x) {
     //   window.location.href = window.location.href.slice(0,-11) + x;
     // }
+    base_url = "https://gama-flomic11.github.io/";
     function changePage(x) {
-      window.location.href = window.location + x;
+      window.location.href = base_url + x;
     }
 
   </script>
