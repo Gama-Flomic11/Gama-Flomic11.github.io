@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html>
 <head>
+  
 <style>
 
 .but {
   background-color: blue;
+  width: 30vw;
 }
 .but:hover {
   background-color: blueviolet;
@@ -15,25 +18,162 @@ a{
 a:hover{
   color: black;
 }
+
+.navbar {
+  width: 20%;
+  font-size:2em;
+} 
+
+.container {
+  display:flex;
+}
+
+.icons {
+  width: 20%
+}
+
+.icons:hover {
+  width: 22%
+}
+
+.boxphoto {
+  width: 90%;
+  height:100%;
+  border: 7px;
+  border-style: solid;
+  border-color: orangered;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.box {
+  width: 33%;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
+}
+.box:hover {
+  width: 40%;
+  height: 110%;
+  .text {
+    top:15%;
+    left:-9%;
+  }
+  cursor: pointer; 
+}
+.text {
+  writing-mode:vertical-rl;
+  rotate: 180deg;
+  position: absolute;
+  color: #17e6c4;
+  font-size:2em;
+  left:-15%;
+  padding: 10px;
+  font-weight: 300;
+  text-shadow:
+    -2px -2px 0 #107766,
+    2px -2px 0 #107766,
+    -2px 2px 0 #107766,
+    2px 2px 0 #107766,
+    -3px 0px 0 #107766,
+    3px 0px 0 #107766,
+    0px -3px 0 #107766,
+    0px 3px 0 #107766;
+  text-align: center;
+}
+
+.pictures {height: 300px;}
+
+@media (width<= 600px) {
+  .container {display:block}
+  .navbar {width: 100%;}
+  .pictures {
+    height: 900px;
+  flex-direction: column;
+}
+.box {
+  padding-bottom: 30px;
+  height:30%;
+  width: 100%;
+}
+.but {
+  width: 50vw;
+}
+.text {
+  left: -12%;
+}
+}
+
+
+
+
+
 </style>
 </head>
 <body>
 
-
-
+<div class ="container"> 
+<div class ="navbar"> 
+  <!-- Image from <a href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons">Hamburger icons created by HideMaru - Flaticon</a> -->
+  <img src="settings.png" class = "icons" onclick = "myFunction()"/><div id="PB">Personal Blogs</div>
+</div>
 <div>
-  <div class="but" style="margin:10px; padding: 5px; border-radius: 5px; width: 15vw;  ">
-    <a href="11-08-2026/index.html" style="text-decoration: none; font-size: 2em;"">11-08-2026 Blog</a>
+  <p style = "text-decoration: none; font-size: 2em;">Recommended Personal Blogs</p>
+  <div class= "pictures" style="display:flex; justify-content: start; padding:10px;">
+  <div onclick="changePage('/25-08-2026/index.html')" class = "box"><p class = "text" style="top:16%"">25-08-2026 <br> Exam Week+</p><img class = "boxphoto" src = "photos/28-08-2026/USyd.jpg"></div>
+  <div onclick="changePage('/11-08-2026/index.html')" class = "box"><p class = "text" style="top:3%">11-08-2026 <br> Formal Arts Dinner+</p><img class = "boxphoto" src = "photos/11-08-2026/Shay Creative Arts Formal Dinner.jpeg"></div>
+  <div onclick="changePage('/14-07-2026/index.html')" class = "box"><p class = "text" style="top:6%">14-07-2026 <br> Family Weekend+</p><img class = "boxphoto" src = "photos/14-07-2026/ShayAndMum.jpeg"></div>
+    
   </div>
-  <div class="but" style="margin:10px; padding: 5px; border-radius: 5px; width: 15vw;  ">
+  <!-- <div class= "pictures" style="display:flex; justify-content: start; padding:10px;">
+  <div onclick="changePage('/28-07-2026/index.html')" class = "box"><p class = "text" >28-07-2026 <br> Family Weekend</p><img class = "boxphoto" src = "photos/14-07-2026/ShayAndMum.jpeg"></div> 
+
+  
+  </div> -->
+  <!-- <div class="but" style="margin:10px; padding: 5px; border-radius: 5px;  ">
+    <a href="11-08-2026/index.html" style="text-decoration: none; font-size: 2em;"">11-08-2026 Blog</a>
+  </div> -->
+  <div class="but" style="margin:10px; padding: 5px; border-radius: 5px;  ">
     <a href="28-07-2026/index.html" style="text-decoration: none; font-size: 2em;"">28-07-2026 Blog</a>
   </div>
-  <div class="but" style="margin:10px; padding: 5px; border-radius: 5px; width: 31vw;  ">
+  <!-- <div class="but" style="margin:10px; padding: 5px; border-radius: 5px; ">
     <a href="14-07-2026/index.html" style="text-decoration: none; font-size: 2em;"">14-07-2026 Blog - Family Weekend</a>
-  </div>
-  <div class="but" style="margin:10px; padding: 5px; border-radius: 5px; width: 15vw;  ">
-    <a href="08-07-2026/index.html" style="text-decoration: none; font-size: 2em;"">08-07-2026 Blog</a>
+  </div> -->
+  <div class="but" style="margin:10px; padding: 5px; border-radius: 5px;  ">
+    <a  href="08-07-2026/index.html" style="text-decoration: none; font-size: 2em;"">08-07-2026 Blog</a>
   </div>
   
   
 </div>
+</div>
+
+<script >
+    let y = 0;
+    function myFunction() {
+      const x = document.getElementsByClassName("navbar");
+
+      if (y == 0 ) {
+        x[0].style.width = "5%";
+        y = 1;
+        changeNamesRetract();
+      } else {
+        x[0].style.width = "20%";
+
+        y = 0;
+        changeNamesExtend();
+      }
+    }
+
+    function changeNamesRetract() {
+      document.getElementById("PB").innerHTML = "PB";
+    }
+
+    function changeNamesExtend() {
+      document.getElementById("PB").innerHTML = "Personal Blogs";
+    }
+
+    function changePage(x) {
+      window.location.href = window.location.href.slice(0,-11) + x;
+    }
+
+  </script>
