@@ -54,10 +54,9 @@ a:hover{
 }
 .box:hover {
   width: 40%;
-  height: 110%;
+  height: 105%;
   .text {
-    top:15%;
-    left:-9%;
+    left:-10.5%;
   }
   cursor: pointer; 
 }
@@ -67,7 +66,7 @@ a:hover{
   position: absolute;
   color: #17e6c4;
   font-size:2em;
-  left:-15%;
+  left:-12%;
   padding: 10px;
   font-weight: 300;
   text-shadow:
@@ -82,7 +81,7 @@ a:hover{
   text-align: center;
 }
 
-.pictures {height: 300px;}
+.pictures {height: 300px; margin-bottom: 3%;}
 
 @media (width<= 600px) {
   .container {display:block}
@@ -104,7 +103,9 @@ a:hover{
 }
 }
 
-
+#PersonalBlogs {
+  visibility:hidden;
+}
 
 
 
@@ -112,42 +113,59 @@ a:hover{
 </head>
 <body>
 
-<div class ="container"> 
+<div class ="container" style="flex-wrap: wrap;"> 
 <div class ="navbar"> 
   <!-- Image from <a href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons">Hamburger icons created by HideMaru - Flaticon</a> -->
-  <img src="settings.png" class = "icons" onclick = "myFunction()"/><div id="PB">Personal Blogs</div>
+  <img src="settings.png" class = "icons" onclick = "myFunction()"/>
+  <div id="PB" onclick="changeHome(1)">Personal Blogs</div>
 </div>
-<div>
+<div id = "Home">
   <p style = "text-decoration: none; font-size: 2em;">Recommended Personal Blogs</p>
+  <div class= "pictures" style="display:flex; justify-content: start; padding:10px;">
+  <div onclick="changePage('08-09-2026/index.html')" class = "box"><p class = "text" style="top:18%"">08-09-2026 <br> Holidays+</p><img class = "boxphoto" src = "photos/08-09-2026/Syd.jpg"></div>
+  <div onclick="changePage('25-08-2026/index.html')" class = "box"><p class = "text" style="top:16%"">25-08-2026 <br> Exam Week+</p><img class = "boxphoto" src = "photos/28-08-2026/USyd.jpg"></div>
+  <div onclick="changePage('11-08-2026/index.html')" class = "box"><p class = "text" style="top:3%">11-08-2026 <br> Formal Arts Dinner+</p><img class = "boxphoto" src = "photos/11-08-2026/Shay Creative Arts Formal Dinner.jpeg"></div>
+    
+  </div>
+  <div class= "pictures" style="display:flex; justify-content: start; padding:10px;">
+  <div onclick="changePage('14-07-2026/index.html')" class = "box"><p class = "text" style="top:6%">14-07-2026 <br> Family Weekend+</p><img class = "boxphoto" src = "photos/14-07-2026/ShayAndMum.jpeg"></div>
+  <div onclick="changePage('08-07-2026/index.html')" class = "box"><p class = "text" style="top:20%">08-07-2026 <br> First Blog!</p><img class = "boxphoto" src = "photos/08-07-2026/TEDWavelengths.jpeg"></div> 
+  <div onclick="changePage('08-07-2026/index.html')" class = "box"><p class = "text" style="top:20%">28-07-2026 <br> Locked In+</p><img class = "boxphoto" src = "photos/28-07-2026/Al-goose-rhythms.jpeg"></div> 
+  </div>
+</div>
+
+<div id = "PersonalBlogs">
+  <p style = "text-decoration: none; font-size: 2em;">All Personal Blogs Most Recent</p>
   <div class= "pictures" style="display:flex; justify-content: start; padding:10px;">
   <div onclick="changePage('25-08-2026/index.html')" class = "box"><p class = "text" style="top:16%"">25-08-2026 <br> Exam Week+</p><img class = "boxphoto" src = "photos/28-08-2026/USyd.jpg"></div>
   <div onclick="changePage('11-08-2026/index.html')" class = "box"><p class = "text" style="top:3%">11-08-2026 <br> Formal Arts Dinner+</p><img class = "boxphoto" src = "photos/11-08-2026/Shay Creative Arts Formal Dinner.jpeg"></div>
-  <div onclick="changePage('14-07-2026/index.html')" class = "box"><p class = "text" style="top:6%">14-07-2026 <br> Family Weekend+</p><img class = "boxphoto" src = "photos/14-07-2026/ShayAndMum.jpeg"></div>
-    
-  </div>
-  <!-- <div class= "pictures" style="display:flex; justify-content: start; padding:10px;">
-  <div onclick="changePage('/28-07-2026/index.html')" class = "box"><p class = "text" >28-07-2026 <br> Family Weekend</p><img class = "boxphoto" src = "photos/14-07-2026/ShayAndMum.jpeg"></div> 
+  <div onclick="changePage('08-07-2026/index.html')" class = "box"><p class = "text" style="top:20%">28-07-2026 <br> Locked In+</p><img class = "boxphoto" src = "photos/28-07-2026/Al-goose-rhythms.jpeg"></div> 
 
-  
-  </div> -->
+  </div>
+  <div class= "pictures" style="display:flex; justify-content: start; padding:10px;">
+  <div onclick="changePage('14-07-2026/index.html')" class = "box"><p class = "text" style="top:6%">14-07-2026 <br> Family Weekend+</p><img class = "boxphoto" src = "photos/14-07-2026/ShayAndMum.jpeg"></div>
+  <div onclick="changePage('08-07-2026/index.html')" class = "box"><p class = "text" style="top:20%">08-07-2026 <br> First Blog!</p><img class = "boxphoto" src = "photos/08-07-2026/TEDWavelengths.jpeg"></div> 
+  </div>
+</div>
+
   <!-- <div class="but" style="margin:10px; padding: 5px; border-radius: 5px;  ">
     <a href="11-08-2026/index.html" style="text-decoration: none; font-size: 2em;"">11-08-2026 Blog</a>
   </div> -->
-  <div class="but" style="margin:10px; padding: 5px; border-radius: 5px;  ">
-    <a href="28-07-2026/index.html" style="text-decoration: none; font-size: 2em;"">28-07-2026 Blog</a>
-  </div>
+  <!-- <div class="but" style="margin:10px; padding: 5px; border-radius: 5px;  ">
+    <a href="28-07-/index.html" style="text-decoration: none; font-size: 2em;"">28-07-2026 Blog</a>
+  </div> -->
   <!-- <div class="but" style="margin:10px; padding: 5px; border-radius: 5px; ">
     <a href="14-07-2026/index.html" style="text-decoration: none; font-size: 2em;"">14-07-2026 Blog - Family Weekend</a>
   </div> -->
-  <div class="but" style="margin:10px; padding: 5px; border-radius: 5px;  ">
+  <!-- <div class="but" style="margin:10px; padding: 5px; border-radius: 5px;  ">
     <a  href="08-07-2026/index.html" style="text-decoration: none; font-size: 2em;"">08-07-2026 Blog</a>
-  </div>
+  </div> -->
   
   
-</div>
 </div>
 
 <script >
+    let pb = false;
     let y = 0;
     function myFunction() {
       const x = document.getElementsByClassName("navbar");
@@ -179,6 +197,22 @@ a:hover{
     base_url = "https://gama-flomic11.github.io/";
     function changePage(x) {
       window.location.href = base_url + x;
+    }
+
+    function changeHome(x) {
+      if (x == 1) {
+        if (pb == false) {
+          pb = true;
+          document.getElementById("PersonalBlog").style.visibility = 'visible';
+          document.getElementById("Home").style.visibility = 'hidden';
+
+
+        } else if (pb == true) {
+          document.getElementById("PersonalBlog").style.visibility = 'hidden';
+          document.getElementById("Home").style.visibility = 'visible';
+        }
+        
+      }
     }
 
   </script>
