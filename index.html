@@ -5,6 +5,8 @@
   
 <style>
 
+
+
 .but {
   background-color: blue;
   width: 30vw;
@@ -83,31 +85,41 @@ a:hover{
 
 .pictures {height: 300px; margin-bottom: 3%;}
 
-@media (width<= 600px) {
-  .container {display:block}
-  .navbar {width: 100%;}
-  .pictures {
-    height: 900px;
-  flex-direction: column;
-}
-.box {
-  padding-bottom: 30px;
-  height:30%;
-  width: 100%;
-}
-.but {
-  width: 50vw;
-}
-.text {
-  left: -12%;
-}
-}
+
 
 #PersonalBlogs {
   visibility:hidden;
 }
 
+@media (width<= 600px) {
+  .container {display:block}
+  .navbar {width: 100%;}
+  .pictures {
+    height: 900px;
+    flex-direction: column;
+  }
+  
+  .box {
+    padding-bottom: 30px;
+    height:30%;
+    width: 100%;
+  }
+  .but {
+    width: 50vw;
+  }
+  .text {
+    left: -17%;
+  }
 
+  .box:hover {
+    width: 100%;
+    height: 35%;
+    .text {
+      left:-17.5%;
+    }
+  }
+  
+}
 
 </style>
 </head>
